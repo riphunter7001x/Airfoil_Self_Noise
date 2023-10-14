@@ -10,7 +10,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for your API
-model = pickle.load(open("model.pkl","rb"))
+model = pickle.load(open("/app/model.pkl","rb"))
 
 @app.route("/")
 def home():
